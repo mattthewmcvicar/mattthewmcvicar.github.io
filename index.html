@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test layout</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/Chart.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header ><h1>NFL Team Pass Completion by Location</h1></header>
+		<div style="width:100%">
+			<nav>
+				<div><b>Teams to compare</b></div>
+				<ul id="sidemenu">
+					<li>Offense: <select name = "OTeam" id="OTeam_Select" onchange="updateChartData()"></select></li>
+					<li>Defense: <select name = "DTEAM" id="DTeam_Select" onchange="updateChartData()"></select></li>
+				</ul>
+			</nav>
+			<div id="main">
+				<div id="versus"></div>
+				<canvas id="chart"></canvas>
+			</div>
+			<div id="analysis"><button type="button" onclick="updateAnalysis()">Test</button></div>
+			
+		</div>
+		<footer>Matt McVicar - matthewmcvicar@gmail.com</footer>
+	</body>
+</html>
+
