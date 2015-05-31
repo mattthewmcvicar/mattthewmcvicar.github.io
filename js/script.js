@@ -14,7 +14,7 @@ function makeRadar(team1, data1, team2, data2){
             "Short Middle", "Short Left", "Long Left"],
         datasets: [
             {
-                //label: team1 + " Offense",
+                label: team1 + " Offense",
                 fillColor: "rgba(220,0,0,0.2)",
                 strokeColor: "rgba(220,0,0,1)",
                 pointColor: "rgba(220,0,0,1)",
@@ -24,7 +24,7 @@ function makeRadar(team1, data1, team2, data2){
                 data: data1
             },
             {
-                //label: team2 + " Defense",
+                label: team2 + " Defense",
                 fillColor: "rgba(0, 220, 0,0.2)",
                 strokeColor: "rgba(0, 220, 0,1)",
                 pointColor: "rgba(0, 220, 0,1)",
