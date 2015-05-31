@@ -39,7 +39,16 @@ function makeRadar(team1, data1, team2, data2){
     updateVersus(data);
 
     var chart = document.getElementById('chart').getContext('2d');
-    new Chart(chart).Radar(data);
+    new Chart(chart).Radar(data, {
+        pointDot: false,
+        showTooltips: false,
+        scaleShowLabels: true,
+        scaleOverride: true,
+        scaleSteps: 4,
+        scaleStepWidth: .25,
+        scaleStartValue: 0
+
+    });
 };
 
 function updateAnalysis(team1, data1, team2, data2){
